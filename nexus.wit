@@ -1,0 +1,10 @@
+package nexus:platform;
+
+interface ui {
+    create-button: func(x: s32, y: s32, label: string);
+}
+
+world app {
+    import ui;
+    export init: func();
+}

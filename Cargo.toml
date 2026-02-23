@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "app",
+    "sdk",
+    "sdk/macros",
+    "plugins/test",
+]
+resolver = "3"
