@@ -4,5 +4,7 @@ members = [
     "sdk",
     "sdk/macros",
     "plugins/test",
+    "plugins/test2",
+    "plugins/test3",
 ]
 resolver = "3"

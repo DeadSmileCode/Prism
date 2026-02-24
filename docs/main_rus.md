@@ -1,5 +1,5 @@
-# Documentation
+# Документация
 
-## There will be a lot of documentation here in the future 🙂 
+## Здесь должно быть много документации в будущем 🙂 
 
-> At the moment, documentation is not being maintained due to the experimental nature of the repository
+> На данный момент документация не ведется из-за экспериментального характера хранилища
