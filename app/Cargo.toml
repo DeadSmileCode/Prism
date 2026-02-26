@@ -4,7 +4,15 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-wasmtime = { version = "25.0", features = ["component-model"] }
+wasmtime = { version = "25.0", features = ["component-model", "async"] }
 anyhow = "1.0"
-iced = { version = "0.12", features = ["tokio"] }
+iced = { version = "0.14", features = ["tokio"] }
 tokio = { version = "1.0", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# For packeting
+flate2 = "1.1.9"
+tar = "0.4.44"

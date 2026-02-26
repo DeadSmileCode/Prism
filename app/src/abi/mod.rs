@@ -1,13 +1,9 @@
-mod ui;
-// mod network; // Будущий модуль
+pub mod ui;
 
-use wasmtime::*;
-use crate::state::AppState;
+use wasmtime::component::Linker;
 
-pub fn register_all_abi(linker: &mut Linker<AppState>) -> Result<()> {
-    // Вызываем регистраторы всех подсистем
+pub fn add_to_linker<T>(linker: &mut Linker<T>) -> anyhow::Result<()> {
+    // Обращаемся к функции из файла abi/ui.rs
     ui::register_ui(linker)?;
-    // network::register_network(linker)?; 
-    
     Ok(())
 }
